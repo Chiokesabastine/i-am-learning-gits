@@ -1,0 +1,37 @@
+
+
+.btn {
+    margin: 1rem;
+    background-color: blue;
+    color: white;
+    padding: 0.6rem 3rem;
+    cursor: pointer;
+    transform: skew(10deg);
+    transition: all 0.9s ease;
+
+}
+.bnt:hover {
+    background-color: gold;
+    color: black;
+    transform: rotateX('10deg');
+border-radius: 45px;
+text-transform: uppercase;
+transition-duration: 1s;
+
+}
+
+.box2 {
+    margin: 2rem;
+    background-color: black;
+    color: aqua;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    transform:skew(10deg) ;
+    transition: all 0.8s ease-in-out;
+    border-radius: 45px;
+
+}
+
+
+
+ 

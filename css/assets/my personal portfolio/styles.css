@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* SKILLS */
+.skills {
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 50px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .about-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
